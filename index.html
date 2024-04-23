@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthCare</title>
+
+  <!-- tailwind and daisyUi cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="max-w-screen-xl mx-auto">
+
+
+
+  <header class="bg-[#f5faff]">
+    <!-- navber -->
+    <div class="flex justify-between p-2 items-center bg-gradient-to-r from-indigo-200 to-[#e4f5fc]">
+      <!-- logo -->
+      <div>
+        <img class="w-24" src="./assets/logo.png" alt="" />
+      </div>
+      <div>
+        <ul class="flex gap-4 text-xl items-center">
+          <li class="hover:text-red-600"><a href="">Home</a></li>
+          <li class="hover:text-red-600">
+            <a href="shop.html" target="_blank">About</a>
+          </li>
+          <li class="hover:text-red-600"><a href="#blogs">Departments</a></li>
+          <li class="hover:text-red-600"><a href="about.html">FAQ</a></li>
+          <li class="hover:text-red-600">
+            <a href="login.html" target="_blank">Blogs</a>
+          </li>
+          <li class="hover:text-red-600">
+            <a href="/medicine.html" target="_blank">Medicine</a>
+          </li>
+          <img class="w-10 rounded-full" src="./assets/profile-pic (6).png" alt="" />
+        </ul>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="grid grid-cols-2 justify-between items-center gap-4 bg-gradient-to-r from-indigo-200 to-[#e4f5fc]">
+      <!-- left side components -->
+      <div class="space-y-4 p-8">
+        <h1 class="text-4xl font-semibold">
+          Get Online <br />
+          Medical Care With <br />
+          Our Best Doctors
+        </h1>
+        <p>
+          Get latest news in your inbox. Consectetur adipiscing
+          elit,adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+          dolore magna seddo.
+        </p>
+        <button class="btn bg-[#2aa7ff] text-white border-none">
+          Get Appointment
+        </button>
+      </div>
+
+      <!--right side component  -->
+      <div class="p-5">
+        <img class="w-96 mx-auto" src="./assets//banner_right.png" alt="" />
+      </div>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main class="my-10">
+    <!-- department section -->
+    <section class="p-5">
+      <p class="text-3xl font-semibold text-center">Our Department</p>
+
+      <!-- cards -->
+      <div class="grid mx-auto lg:grid-cols-4 grid-cols-2 gap-3 py-10">
+        <!-- 1st card -->
+        <div
+          class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
+
+          <div class="my-3 space-y-3">
+            <img class="mx-auto w-10" src="./assets/health-care.svg" alt="" />
+            <p class="font-semibold">Health Care</p>
+            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
+          </div>
+
+        </div>
+        <!-- 2nd card -->
+        <div
+          class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
+
+          <div class="my-3 space-y-3">
+            <img class="mx-auto" src="./assets/dep_2.png" alt="" />
+            <p class="font-semibold">Orthopedic Care</p>
+            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
+          </div>
+
+        </div>
+
+        <!-- 3nd card -->
+        <div
+          class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
+
+          <div class="my-3 space-y-3">
+            <img class="mx-auto" src="./assets/dep_3.png" alt="" />
+            <p class="font-semibold">Psychiatric Care</p>
+            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
+          </div>
+
+        </div>
+        <!-- 4th card -->
+        <div
+          class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
+
+          <div class="my-3 space-y-3">
+            <img class="mx-auto" src="./assets/dep_1.png" alt="" />
+            <p class="font-semibold">Dental Care</p>
+            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+      <div class="flex justify-end mr-5">
+       
+      <a href="/departments.html">
+        <button class="btn btn-sm  bg-[#2aa7ff]  text-white border-none">
+          See More
+        </button>
+      </a>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="my-10">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-3">
+        <div class="">
+          <img class="rounded-2xl mx-auto" src="./assets/about_1.png" alt="">
+        </div>
+        <div class="space-y-3">
+          <p class="text-[#2aa7ff]">About Us</p>
+          <p class="text-3xl font-bold">Consult A Doctor Anytime, <br> Anywhere By Search</p> <br>
+          <small>Get latest news in your inbox. Consectetur adipiscing elitadipiscing elits eddo eusmod tempor
+            incididunt utlabore edolore magnased doeiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum
+            suspend isse ultrices gravida. Consectetur adipiscing elitadipiscing elitserissed & ddo eiusmodtempor
+            incididunt utlabore et dolore magnased doeiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+          <ul class="space-y-2">
+            <li> <i class="fa-solid fa-circle-check"></i> Get latest news in your inbox. Consectetur elitadipiscing.
+            </li>
+
+            <li> <i class="fa-solid fa-circle-check"></i> Eddo eusmod tempor incididunt utlabore edolore.</li>
+
+            <li><i class="fa-solid fa-circle-check"></i> Get latest news in your inbox. Consectetur elitadipiscing.</li>
+
+            <li> <i class="fa-solid fa-circle-check"></i> Get latest news in your inbox. Consectetur elitadipiscing.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- appoitment -->
+
+    <section class="my-10 bg-[#f5faff]">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 justify-between p-10">
+
+        <div class="space-y-3">
+          <p class="text-[#2aa7ff] font-semibold">Book Appointment</p>
+          <p class="text-3xl font-bold">Book An Appointment <br> Today,Online</p>
+
+          <p>Get latest news in your inbox. Consectetur adipiscing elitadipiscing elits eddo eusmod tempor incididunt
+            utlabore edolore magnased doeiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspend
+            isse ultrices gravida. Consectetur adipiscing elitadipiscing elitserissed & ddo eiusmodtempor incididunt
+            utlabore et dolore magnased doeiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <br>
+
+          <p>Get latest news in your inbox. Consectetur adipiscing elitadipiscing elits eddo eusmod tempor incididunt
+            utlabore edolore magnased doeiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspend
+            isse ultrices gravida. </p> <br>
+
+          Consectetur adipiscing elitadipiscing elitserissed & ultrices gravida and ddo eiusmodtempor incididunt
+          utlabore et dolore magnased doeiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+          <button class="btn bg-[#2aa7ff] text-white border-none">
+            Book Now
+          </button>
+        </div>
+
+        <div>
+          <div class=" rounded-2xl p-5  w-96 mx-auto bg-white text-center">
+            <p class="text-2xl font-semibold">Book An Appointment</p>
+            <p>Get details in your inbox right now</p>
+
+            <div class="py-2 space-y-3">
+              <select title="department" name="text" id=""
+                class="input input-bordered input-info w-full max-w-xs border-[#2aa7ff] bg-[#f6faff] border-none ">
+                <option value="" disabled selected>Select Department</option>
+                <!-- Add your department options here -->
+                <option value="healthcare">Surgery</option>
+                <option value="technology">Radiology</option>
+                <option value="finance">Dermatology</option>
+              </select>
+              <input type="text" placeholder="Full Name"
+                class="input input-bordered input-info w-full max-w-xs border-[#2aa7ff] bg-[#f6faff] border-none">
+              <input type="text" placeholder="Phone"
+                class="input input-bordered input-info w-full max-w-xs border-[#2aa7ff] bg-[#f6faff] border-none">
+              <input type="email" placeholder="Email"
+                class="input input-bordered input-info w-full max-w-xs border-[#2aa7ff] bg-[#f6faff] border-none">
+              <input type="date" placeholder="Email"
+                class="input input-bordered input-info w-full max-w-xs border-[#2aa7ff] bg-[#f6faff] border-none">
+
+              <button class="btn bg-[#2aa7ff] w-2/3 text-white border-none">
+                Book Now
+              </button>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- doctors -->
+
+    <section class="my-10">
+      <div>
+        <p class="text-3xl font-semibold">Our Medical Specialist</p>
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-2 py-10">
+
+          <!-- first card -->
+          <div class=" text-center bg-[#f5faff] rounded-2xl ">
+            <img src="./assets/6555a64ec6a3b77b492aed21_michael-johnson.png" alt="">
+            <div class="py-2 bg-[#f5faff]">
+              <p class="font-semibold ">Dr.John Adnan</p>
+              <p>Orthopedist</p>
+
+
+            </div>
+
+          </div>
+          <!-- 2nd card -->
+          <div class=" text-center bg-[#f5faff] rounded-2xl ">
+            <img src="./assets/6555a6a43e6380b56d8bc466_sarah-johnson.png" alt="">
+            <div class="py-2 bg-[#f5faff]">
+              <p class="font-semibold ">Dr.John Adnan</p>
+              <p>Orthopedist</p>
+
+
+            </div>
+
+          </div>
+          <!-- 3rd card -->
+          <div class=" text-center bg-[#f5faff] rounded-2xl ">
+            <img src="./assets/6555a66c0759d0364d0f2d5d_john-smith.png" alt="">
+            <div class="py-2 bg-[#f5faff]">
+              <p class="font-semibold ">Dr.John Adnan</p>
+              <p>Orthopedist</p>
+
+
+            </div>
+
+          </div>
+          <!-- 4th card -->
+          <div class=" text-center bg-[#f5faff] rounded-2xl ">
+            <img src="./assets/6555a6117ca55a1b562fabdd_alice-mary.png" alt="">
+            <div class="py-2 bg-[#f5faff]">
+              <p class="font-semibold ">Dr.John Adnan</p>
+              <p>Orthopedist</p>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+
+
+      <div class="text-center space-y-3">
+        <p class="text-[#2aa7ff] text-3xl text-center font-bold">Our Blogs</p>
+        <p class="text-4xl font-bold">Our Latest News & Articles</p>
+        <p>Get latest news in your inbox. Consectetur adipiscing elitadipiscing elitse ddo eiusmod tempor incididunt</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-3 grid-cols-1 py-8">
+
+        <!-- first card blog -->
+
+        <div className="card card-normal w-96 bg-[#2aa7ff] border-2 p-10 shadow-xl">
+          <img class="rounded-2xl w-[400px] h-[180px] object-cover"
+            src="./assets/male-doctor-recording-video-blog-hospital-healthcare-medicine-blogging-concept-happy-smiling-camera-186020264.webp"
+            alt="Shoes" />
+          <div class="space-y-3">
+            <p class="text-[#2aa7ff] mt-2  font-semibold">Published on May 11, 2023 at 6:00 AM</p>
+            <p class="font-bold text-2xl">Get latest news in your inbox</p>
+            <small>After working in coffee shops around the
+              world Mark finds himself.....</small>
+          </div>
+          <div class="flex justify-end mt-4">
+            <button class="my-5 btn mr-8  text-white bg-[#2aa7ff]">Read More</button>
+          </div>
+
+        </div>
+        <!-- 2nd card blog -->
+
+        <div className="card card-normal w-96 bg-[#2aa7ff] border-2 p-10 shadow-xl">
+          <img class="rounded-2xl w-[400px] h-[180px] object-cover"
+            src="./assets/influencer-girl-blogger-in-medical-mask-talks-about-coronavirus-woman-recording-video-blog-tells-how-to-protect-yourself-from-2019-ncov-bloger-talks-2D8DFAJ.jpg"
+            alt="Shoes" />
+          <div class="space-y-3">
+            <p class="text-[#2aa7ff] mt-2  font-semibold">Published on May 11, 2023 at 6:00 AM</p>
+            <p class="font-bold text-2xl">Get latest news in your inbox</p>
+            <small>After working in coffee shops around the
+              world Mark finds himself.....</small>
+          </div>
+          <div class="flex justify-end mt-4">
+            <button class="my-5 btn mr-8   text-white bg-[#2aa7ff]">Read More</button>
+          </div>
+
+
+        </div>
+        <!-- third card blog -->
+
+        <div className="card card-normal w-96 bg-[#2aa7ff] border-2 p-10 shadow-xl">
+          <img class="rounded-2xl w-[400px] h-[180px] object-cover" src="./assets/Doctor-blogging.jpg" alt="Shoes" />
+          <div class="space-y-3">
+            <p class="text-[#2aa7ff] mt-2  font-semibold">Published on May 11, 2023 at 6:00 AM</p>
+            <p class="font-bold text-2xl">Get latest news in your inbox</p>
+            <small>After working in coffee shops around the
+              world Mark finds himself.....</small>
+          </div>
+          <div class="flex justify-end mt-4">
+            <button class="my-5 btn mr-8   text-white bg-[#2aa7ff]">Read More</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+<!-- FAQ -->
+
+    <section class="my-10">
+      <p class="text-[#2aa7ff] text-center font-bold text-2xl py-5">Get Your Answer</p>
+      <p class="
+      text-center font-bold text-4xl mb-14">Frequently Asked Questions</p>
+      <div class="collapse collapse-arrow bg-base-200 ">
+        <input type="radio" name="my-accordion-2" checked="checked" /> 
+        <div class="collapse-title text-xl font-medium">
+          What do you wear to a medical check up?
+        </div>
+        <div class="collapse-content"> 
+          <p>Wear comfortable clothing for examination and blood testing, such as a short sleeves shirt or a shirt that can roll up sleeves</p>
+        </div>
+      </div> <br>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" /> 
+        <div class="collapse-title text-xl font-medium">
+          What to do before a health screening?
+        </div>
+        <div class="collapse-content"> 
+          <p>It is important to fast for at least 12 hours. Water is allowed though. You should not chew gum, smoke, or exercise before your test because all these activities can stimulate your digestive system and affect test results. Avoid alcohol for at least 24 hours before your test</p>
+        </div>
+      </div> <br>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" /> 
+        <div class="collapse-title text-xl font-medium">
+          Which test is best for brain?
+        </div>
+        <div class="collapse-content"> 
+          <p>While a CT scan is particularly useful for assessing bony anatomy, MRI is best for imaging soft tissues, such as the brain and spinal cord.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+  </main>
+
+  <footer class="footer p-10 bg-base-300 text-base-content">
+    <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+        <h6 class="footer-title">Social</h6>
+        <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                    </path>
+                </svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                    </path>
+                </svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                    </path>
+                </svg></a>
+        </div>
+    </nav>
+</footer>
+</body>
+
+</html>
