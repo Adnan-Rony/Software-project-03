@@ -14,9 +14,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- swwetalert -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="max-w-screen-xl mx-auto">
+<body class="max-w-screen-xl mx-auto ">
 
 
 
@@ -29,28 +31,40 @@
       </div>
       <div>
         <ul class="flex gap-4 text-xl items-center">
-          <li class="hover:text-red-600"><a href="/index.html">Home</a></li>
-          <li class="hover:text-red-600">
+          <li class=" btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none"><a href="/index.html">Home</a></li>
+          <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
             <a href="/about.html" target="_blank">About</a>
           </li>
-          <li class="hover:text-red-600"><a href="/departments.html">Departments</a></li>
-          <li class="hover:text-red-600"><a href="/FAQ.html">FAQ</a></li>
-          <li class="hover:text-red-600">
-            <a href="blogs.html" >Blogs</a>
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none m-1">Department <i class="fa-solid fa-caret-down"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="/Neurology.html">Neurology</a></li>
+              <li><a href="/orthopedic.html">Orthopedic Care</a></li>
+              <li><a href="/psychiatric.html">Psychiatric Care</a></li>
+              <li><a href="/dental.html">Dental Care</a></li>
+              <li><a href="/general_surgery.html">General Surgery</a></li>
+              <li><a href="/general_surgery.html">Gynecoogy</a></li>
+              <li><a href="/Pediatrics.html">Pediatrics</a></li>
+              <li><a href="/internal_medicine.html">Internal Medicine</a></li>
+            </ul>
+          </div>
+          <li id="FAQ" class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none"><a href="">FAQ</a></li>
+          <li id="Blog" class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none"> <a href="" >Blogs</a>
           </li>
-          <li class="hover:text-red-600">
+          <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
             <a href="/medicine.html" >Medicine</a>
           </li>
-          <li class="hover:text-red-600">
+          <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
             <a href="/login.html" >Login</a>
           </li>
-          <img class="w-10 rounded-full" src="./assets/profile-pic (6).png" alt="" />
+          <!-- <img class="w-10 rounded-full" src="./assets/profile-pic (6).png" alt="" /> -->
 
         </ul>
       </div>
     </div>
 
     <!-- banner -->
+   <div class="">
     <div class="grid grid-cols-2 justify-between items-center gap-4 bg-gradient-to-r from-indigo-200 to-[#e4f5fc]">
       <!-- left side components -->
       <div class="space-y-4 p-8">
@@ -64,7 +78,7 @@
           elit,adipiscing elit,sed do eiusmod tempor incididunt ut labore et
           dolore magna seddo.
         </p>
-        <button class="btn bg-[#2aa7ff] text-white border-none">
+        <button id="scrollButton" class="btn bg-[#2aa7ff] text-white border-none">
           Get Appointment
         </button>
       </div>
@@ -73,7 +87,16 @@
       <div class="p-5">
         <img class="w-96 mx-auto" src="./assets//banner_right.png" alt="" />
       </div>
+      
+
+
+
     </div>
+  
+
+ 
+   </div>
+
   </header>
 
   <!-- main section -->
@@ -88,22 +111,26 @@
         <div
           class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
 
+         <a href="/Neurology.html">
           <div class="my-3 space-y-3">
             <img class="mx-auto w-10" src="./assets/health-care.svg" alt="" />
-            <p class="font-semibold">Health Care</p>
+            <p class="font-semibold">Neurology</p>
             <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
           </div>
+         </a>
 
         </div>
         <!-- 2nd card -->
         <div
           class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
 
+        <a href="/orthopedic.html">
           <div class="my-3 space-y-3">
             <img class="mx-auto" src="./assets/dep_2.png" alt="" />
             <p class="font-semibold">Orthopedic Care</p>
             <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
           </div>
+        </a>
 
         </div>
 
@@ -111,22 +138,26 @@
         <div
           class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
 
-          <div class="my-3 space-y-3">
-            <img class="mx-auto" src="./assets/dep_3.png" alt="" />
-            <p class="font-semibold">Psychiatric Care</p>
-            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
-          </div>
+          <a href="/psychiatric.html">
+            <div class="my-3 space-y-3">
+              <img class="mx-auto" src="./assets/dep_3.png" alt="" />
+              <p class="font-semibold">Psychiatric Care</p>
+              <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
+            </div>
+          </a>
 
         </div>
         <!-- 4th card -->
         <div
           class="border text-center w-60 h-56 p-3 rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2aa7ff] hover:text-white">
 
-          <div class="my-3 space-y-3">
-            <img class="mx-auto" src="./assets/dep_1.png" alt="" />
-            <p class="font-semibold">Dental Care</p>
-            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
-          </div>
+          <a href="/dental.html">
+            <div class="my-3 space-y-3">
+              <img class="mx-auto" src="./assets/dep_1.png" alt="" />
+              <p class="font-semibold">Dental Care</p>
+              <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut esse voluptatibus veniam?</small>
+            </div>
+          </a>
 
         </div>
 
@@ -177,8 +208,8 @@
 
     <!-- appoitment -->
 
-    <section class="my-10 bg-[#f5faff]">
-      <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 justify-between p-10">
+    <section id="appoitment" class="my-10 bg-[#f5faff]">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 justify-between p-8">
 
         <div class="space-y-3">
           <p class="text-[#2aa7ff] font-semibold">Book Appointment</p>
@@ -196,9 +227,7 @@
           Consectetur adipiscing elitadipiscing elitserissed & ultrices gravida and ddo eiusmodtempor incididunt
           utlabore et dolore magnased doeiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 
-          <button class="btn bg-[#2aa7ff] text-white border-none">
-            Book Now
-          </button>
+          
         </div>
 
         <div>
@@ -224,7 +253,7 @@
               <input type="date" placeholder="Email"
                 class="input input-bordered input-info w-full max-w-xs border-[#2aa7ff] bg-[#f6faff] border-none">
 
-              <button class="btn bg-[#2aa7ff] w-2/3 text-white border-none">
+              <button onclick="handleappiotment()" class="btn bg-[#2aa7ff] w-2/3 text-white border-none">
                 Book Now
               </button>
 
@@ -242,7 +271,7 @@
 
     <!-- doctors sabbir -->
 
-    <section class="my-10">
+    <section class="my-10 p-8">
 
       <div>
         <p class="text-3xl font-semibold">Our Medical Specialist</p>
@@ -250,9 +279,9 @@
 
           <!-- first card -->
           <div class=" text-center bg-[#f5faff] rounded-2xl ">
-            <img src="./assets/6555a64ec6a3b77b492aed21_michael-johnson.png" alt="">
+            <img class="object-cover w-[309px] h-[364px]" src="./assets/6555a64ec6a3b77b492aed21_michael-johnson.png" alt="">
             <div class="py-2 bg-[#f5faff]">
-              <p class="font-semibold ">Dr.Jon Sabbir</p>
+              <p class="font-semibold ">Dr.Adnan Rony</p>
               <p>Orthopedist</p>
 
 
@@ -262,10 +291,10 @@
 
           <!-- 2nd card -->
           <div class=" text-center bg-[#f5faff] rounded-2xl ">
-            <img src="./assets/6555a6a43e6380b56d8bc466_sarah-johnson.png" alt="">
+            <img class="object-cover w-[309px] h-[364px]" src="./assets/6555a6a43e6380b56d8bc466_sarah-johnson.png" alt="">
             <div class="py-2 bg-[#f5faff]">
-              <p class="font-semibold ">Dr.John Adnan</p>
-              <p>Orthopedist</p>
+              <p class="font-semibold ">Dr.Sabrin nahar</p>
+              <p>Neurology</p>
 
 
             </div>
@@ -274,10 +303,10 @@
 
           <!-- 3rd card -->
           <div class=" text-center bg-[#f5faff] rounded-2xl ">
-            <img src="./assets/6555a66c0759d0364d0f2d5d_john-smith.png" alt="">
+            <img class="object-cover w-[309px] h-[364px]" src="./assets/6555a66c0759d0364d0f2d5d_john-smith.png" alt="">
             <div class="py-2 bg-[#f5faff]">
-              <p class="font-semibold ">Dr.John Adnan</p>
-              <p>Orthopedist</p>
+              <p class="font-semibold ">Dr.Tamjid Razin</p>
+              <p>Pediatrics</p>
 
 
             </div>
@@ -286,10 +315,10 @@
 
           <!-- 4th card -->
           <div class=" text-center bg-[#f5faff] rounded-2xl ">
-            <img src="./assets/6555a6117ca55a1b562fabdd_alice-mary.png" alt="">
+            <img class="object-cover w-[309px] h-[364px]" src="./assets/6555a6117ca55a1b562fabdd_alice-mary.png" alt="">
             <div class="py-2 bg-[#f5faff]">
-              <p class="font-semibold ">Dr.Nafa</p>
-              <p>Orthopedist</p>
+              <p class="font-semibold ">Dr.Nafiur Rahman</p>
+              <p>Gynecoogy</p>
 
 
             </div>
@@ -304,10 +333,10 @@
 
 
         <!-- blogs (sabbir) -->
-    <section>
+    <section id="Blog_section" class="p-8">
 
 
-      <div class="text-center space-y-3">
+      <div class="text-center space-y-3 ">
         <p class="text-[#2aa7ff] text-3xl text-center font-bold">Our Blogs</p>
         <p class="text-4xl font-bold">Our Latest News & Articles</p>
         <p>Get latest news in your inbox. Consectetur adipiscing elitadipiscing elitse ddo eiusmod tempor incididunt</p>
@@ -375,7 +404,7 @@
     </section>
 <!-- FAQ -->
 
-    <section class="my-10">
+    <section id="FAQ_SECTION" class="my-10 p-8">
       <p class="text-[#2aa7ff] text-center font-bold text-2xl py-5">Get Your Answer</p>
       <p class="
       text-center font-bold text-4xl mb-14">Frequently Asked Questions</p>
@@ -453,6 +482,32 @@
         </div>
     </nav>
 </footer>
+
+
+
+<script>
+  document.getElementById('scrollButton').addEventListener('click', function() {
+    // Smooth scroll to the target section
+    document.getElementById('appoitment').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.getElementById('FAQ').addEventListener('click', function() {
+    // Smooth scroll to the target section
+    document.getElementById('FAQ_SECTION').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.getElementById('Blog').addEventListener('click', function() {
+    // Smooth scroll to the target section
+    document.getElementById('Blog_section').scrollIntoView({ behavior: 'smooth' });
+  });
+
+
+  function handleappiotment() {
+    Swal.fire({
+        icon: 'success',
+        title: 'Booking Successful',
+        text: 'You are now booking!',
+    });
+}
+</script>
 </body>
 
 </html>

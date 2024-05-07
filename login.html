@@ -23,33 +23,45 @@
     <main class="max-w-screen-xl mx-auto">
 
         <!-- navber -->
-        <div class="flex justify-between p-2 items-center bg-gradient-to-r from-indigo-200 to-[#e4f5fc]">
-            <!-- logo -->
-            <div>
-                <a href="/index.html"> <img class="w-24" src="./assets/logo.png" alt="" /></a>
-            </div>
-            <div>
-                <ul class="flex gap-4 text-xl items-center">
-                    <li class="hover:text-red-600"><a href="/index.html">Home</a></li>
-                    <li class="hover:text-red-600">
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li class="hover:text-red-600"><a href="/departments.html">Departments</a></li>
-                    <li class="hover:text-red-600"><a href="/FAQ.html">FAQ</a></li>
-                    <li class="hover:text-red-600">
-                        <a href="blogs.html">Blogs</a>
-                    </li>
-                    <li class="hover:text-red-600">
-                        <a href="/medicine.html">Medicine</a>
-                    </li>
-                    <li class="hover:text-red-600">
-                        <a href="/login.html">Login</a>
-                    </li>
-                    <img class="w-10 rounded-full" src="./assets/profile-pic (6).png" alt="" />
-
-                </ul>
-            </div>
+    <div class="flex justify-between p-2 items-center bg-gradient-to-r from-indigo-200 to-[#e4f5fc]">
+        <!-- logo -->
+        <div>
+         <a href="/index.html"> <img class="w-24" src="./assets/logo.png" alt="" /></a>
         </div>
+        <div>
+          <ul class="flex gap-4 text-xl items-center">
+            <li class=" btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none"><a href="/index.html">Home</a></li>
+            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
+              <a href="/about.html" target="_blank">About</a>
+            </li>
+            <div class="dropdown dropdown-hover">
+              <div tabindex="0" role="button" class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none m-1">Department <i class="fa-solid fa-caret-down"></i></div>
+              <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="/Neurology.html">Neurology</a></li>
+                <li><a href="/orthopedic.html">Orthopedic Care</a></li>
+                <li><a href="/psychiatric.html">Psychiatric Care</a></li>
+                <li><a href="/dental.html">Dental Care</a></li>
+                <li><a href="/general_surgery.html">General Surgery</a></li>
+                <li><a href="/general_surgery.html">Gynecoogy</a></li>
+                <li><a href="/Pediatrics.html">Pediatrics</a></li>
+                <li><a href="/internal_medicine.html">Internal Medicine</a></li>
+              </ul>
+            </div>
+            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none"><a href="/FAQ.html">FAQ</a></li>
+            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
+              <a href="blogs.html" >Blogs</a>
+            </li>
+            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
+              <a href="/medicine.html" >Medicine</a>
+            </li>
+            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
+              <a href="/login.html" >Login</a>
+            </li>
+            <!-- <img class="w-10 rounded-full" src="./assets/profile-pic (6).png" alt="" /> -->
+  
+          </ul>
+        </div>
+      </div>
 
 
         <!-- login -->
