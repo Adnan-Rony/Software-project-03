@@ -32,14 +32,6 @@
           <ul class="flex gap-4 text-xl items-center">
           
            
-            <div class="dropdown dropdown-hover">
-                <div tabindex="0" role="button" class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none m-1">Portal <i class="fa-solid fa-caret-down"></i></div>
-                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a href="/loginPatient.html">Patient</a></li>
-                  <li><a href="/doctorlogin.html"> Doctor</a></li>
-              
-                </ul>
-              </div>
             <!-- <img class="w-10 rounded-full" src="./assets/profile-pic (6).png" alt="" /> -->
   
           </ul>
@@ -67,13 +59,12 @@
                         <input type="password" id="password" name="password" placeholder="Enter Your Password"
                             class="w-full border border-gray-300 p-2 rounded " required>
                     </div>
-                    <button onclick="handlesubmit()" type="submit"
+                    <a href="/patient.html">
+                        <button onclick="handlesubmit()" type="submit"
                         class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 ">Login</button>
+                    </a>
                 </form>
-                <p class="mt-5 text-center">New here? please <a class="text-red-700" href="/registation.html">
-                    Register
-
-                </a> </p>
+                
                 <!-- <p class="mt-5 text-center"> Or </p> -->
                 <div class="flex gap-3 items-center justify-center mt-3">
                     <button onclick="handlesubmit()" type="submit"
@@ -157,12 +148,14 @@
             Swal.fire({
                 icon: 'success',
                 title: 'Login Successful',
-                
+                showConfirmButton: false,
+                timer: 1500
             }).then(() => {
-                window.location.href = '/index.html';
+                window.location.href = '/patient.html';
             });
-
         }
+
+        
     </script>
 
 
