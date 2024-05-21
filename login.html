@@ -30,33 +30,16 @@
         </div>
         <div>
           <ul class="flex gap-4 text-xl items-center">
-            <li class=" btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none"><a href="/index.html">Home</a></li>
-            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
-              <a href="/about.html" target="_blank">About</a>
-            </li>
+          
+           
             <div class="dropdown dropdown-hover">
-              <div tabindex="0" role="button" class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none m-1">Department <i class="fa-solid fa-caret-down"></i></div>
-              <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href="/Neurology.html">Neurology</a></li>
-                <li><a href="/orthopedic.html">Orthopedic Care</a></li>
-                <li><a href="/psychiatric.html">Psychiatric Care</a></li>
-                <li><a href="/dental.html">Dental Care</a></li>
-                <li><a href="/general_surgery.html">General Surgery</a></li>
-                <li><a href="/general_surgery.html">Gynecoogy</a></li>
-                <li><a href="/Pediatrics.html">Pediatrics</a></li>
-                <li><a href="/internal_medicine.html">Internal Medicine</a></li>
-              </ul>
-            </div>
-            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none"><a href="/FAQ.html">FAQ</a></li>
-            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
-              <a href="blogs.html" >Blogs</a>
-            </li>
-            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
-              <a href="/medicine.html" >Medicine</a>
-            </li>
-            <li class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none">
-              <a href="/login.html" >Login</a>
-            </li>
+                <div tabindex="0" role="button" class="btn btn-sm btn-outline hover:bg-blue-600 hober:text-white hover:border-none m-1">Portal <i class="fa-solid fa-caret-down"></i></div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="/patient.html">Patient</a></li>
+                  <li><a href="/doctor.html"> Doctor</a></li>
+              
+                </ul>
+              </div>
             <!-- <img class="w-10 rounded-full" src="./assets/profile-pic (6).png" alt="" /> -->
   
           </ul>
@@ -66,11 +49,9 @@
 
         <!-- login -->
        
-        <div class="flex justify-around gap-5 items-center h-screen">
+        <div class="flex justify-center gap-5 items-center h-screen my-10">
 
-            <div>
-                <img src="./assets/login.png" alt="">
-            </div>
+          
 
             <div class="bg-white p-8 rounded shadow-lg w-96">
 
@@ -89,17 +70,17 @@
                     <button onclick="handlesubmit()" type="submit"
                         class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 ">Login</button>
                 </form>
-                <p class="mt-5 text-center">Or Sign In with</p>
+                <p class="mt-5 text-center">New here? please <a class="text-red-700" href="/registation.html">
+                    Register
+
+                </a> </p>
+                <!-- <p class="mt-5 text-center"> Or </p> -->
                 <div class="flex gap-3 items-center justify-center mt-3">
-                    <img src="./assets/google 1.jpg" alt="">
-                    <img src="./assets//bx_bxl-facebook.jpg" alt="">
-                    <img src="./assets//bx_bxl-linkedin.jpg" alt="">
+                    <button onclick="handlesubmit()" type="submit"
+                    class="w-full btn btn-outlier p-2 rounded  ">Continue With Google</button>
 
                 </div>
-                <p class="mt-5 text-center">New here? please <a class="text-red-700" href="/registation.html">
-                        Register
-
-                    </a> </p>
+              
             </div>
 
         </div>
