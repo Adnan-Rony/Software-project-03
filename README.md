@@ -1,3 +1,2 @@
-# Software-project-0344
-# sp-003
-"# sp-003" 
+simple project
+livelink:https://doctorportal-omega.vercel.app/
